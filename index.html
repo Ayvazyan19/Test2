@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="libs/css/style.css">
+        <title>Project N 1</title>
+    </head>
+
+    <body>
+        <!-- This is a main container -->
+        <div id="page_home" class="container main_container">
+
+            <!-- This is a main row -->
+            <div class="row main_row">
+
+                <header class="header">
+                    <div class="header_logo">
+                        <img class="header_logo_image" src="libs/img/logo.png" alt="Logo">
+                    </div>
+                    <div class="header_menu">
+                        <ul class="header_menu_list">
+                            <li class="header_menu_list_item_active"><a href="/">Home</a></li>
+                            <li class="header_menu_list_item"><a href="">About</a></li>
+                            <li class="header_menu_list_item"><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <main class="main">
+                    <section id="about_us" class="page_section">
+                        <div class="section_row">
+                            <div class="section_row_col bottom_row">
+                                <h3 class="section_row_col_header">This is a head</h3>
+                                <p class="section_row_col_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cumque delectus non suscipit,<br> temporibus earum aliquam deserunt corrupti quos ut illo dolor culpa inventore,<br> aperiam modi eveniet repellendus facere assumenda nihil ipsum, error sit perspiciatis cum dicta. In, voluptates quaer.</p>
+                            </div>
+                            <div class="section_row_col top_row">
+                                <img class="section_row_col_image" src="libs/img/Shaqi_jrvej.jpg" alt="IMG">
+                            </div>
+                           
+                        </div>
+                    </section>
+                    <section id="video" class="page_section">
+                        <div class="section_row">
+                            <div class="section_row_col full_size">
+                                <h1 class="section_row_col_header">10 seconds video</h1>
+                            </div>
+                            <div class="section_row_col full_size">
+                                <video class="section_row_col_video" controls autoplay muted loop>
+                                    <source src="libs/video/10_video.mp4" type="video/mp4">
+                                    <source src="libs/video/10_video.webm" type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="map" class="page_section">
+                        <div class="section_row">
+                            <iframe class="section_row_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.2220328228486!2d44.49285227523766!3d40.80111443215655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041b9544ee55555%3A0xb74382b74963d916!2sVanadzor%20%22Armenia%22%20Hotel%20%26%20Health%20Resort!5e0!3m2!1sen!2sam!4v1699205897403!5m2!1sen!2sam" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </section>
+                    <section id="form" class="page_section">
+                        <div class="section_row">
+                            <div class="section_row_col full_size">
+                                <h1 class="section_row_col_header_formhead">Contact Us</h1>
+                            </div>
+                            <div class="section_row_col full_size">
+                                <form class="section_row_col_form">
+                                    <div class="section_row_col_form_row">
+                                        <label>Մուտքագրեք Ձեր անունը*</label>
+                                        <input type="text" placeholder="Ձեր անունը" name="first_name" required>
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Մուտքագրեք Ձեր տարիքը*</label>
+                                        <input type="number" min="9" max="99" name="age" required>
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Ձեր ծննդյան օրը, ամիսը, տարին*</label>
+                                        <input type="date" name="brthday">
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Ընտրեք Ձեր սեռը</label>
+                                        <input type="checkbox" name="male"><span>Male</span>
+                                        <input type="checkbox" name="female"><span>Female</span>
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Ընտրեք Ձեր սեռը</label>
+                                        <input type="radio" name="male"><span>Male</span>
+                                        <input type="radio" name="female"><span>Female</span>
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Ձեր Էլ. հասցեն</label>
+                                        <input type="email" name="email" required placeholder="email@gmail.com"> 
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Գաղտնաբառ</label>
+                                        <input type="password" name="password" required placeholder="8 նիշ">
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>ՁԵր նկարը</label>
+                                        <input type="file" name="image">
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Ընտրել ապրանքը</label>
+                                        <select name="product">
+                                            <option value="xndzor">Խնձոր</option>
+                                            <option value="mandarin">Մանդարին</option>
+                                            <option selected>Ընտրեք ապրանքը</option>
+                                        </select>
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <label>Գրեք Հաղորդագրություն</label>
+                                        <textarea placeholder="Հաղորդգրություն" name="message"></textarea>
+                                    </div>
+                                    <div class="section_row_col_form_row">
+                                        <button type="submit">Ուղարկել</button>
+                                       
+                                        <button type="reset">Ջնջել</button>
+                                     
+                                       
+                                   
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </section>
+                </main>
+
+                <footer class="footer">
+
+                </footer>
+
+            </div>
+
+        </div>
+
+
+
+    </body>
+
+
+</html>
